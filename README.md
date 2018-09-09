@@ -1,1 +1,1 @@
-# deeplearning.ai_assignment
+# deep learning course by Andrew Ng - assignment
