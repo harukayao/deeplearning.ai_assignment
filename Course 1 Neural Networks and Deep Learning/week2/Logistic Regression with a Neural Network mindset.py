@@ -9,9 +9,8 @@ Created on Sun Sep  9 19:41:15 2018
 import numpy as np
 import matplotlib.pyplot as plt
 import h5py
-import scipy
 from skimage import transform
-from PIL import Image
+
 
 def load_dataset():
     train_dataset = h5py.File('datasets/train_catvnoncat.h5','r')
