@@ -72,7 +72,6 @@ print('sanity check after reshape:' + str(train_set_x_flatten[0:5,0]))
 train_set_x = train_set_x_flatten/255
 test_set_x = test_set_x_flatten/255
 
-#GRADED FUNCTION: sigmoid
 def sigmoid(z):
     """
     Compute the sigmoid of z
@@ -89,7 +88,6 @@ def sigmoid(z):
 print('sigmoid([0,2]) = ' + str(sigmoid(np.array([0,2]))))
 '''
 
-#GRADED FUNCTION: initialize_with_zeros
 def initialize_with_zeros(dim):
     """
     This function creates a vector of zeros of shape (dim, 1) for w and initializes b to 0.
@@ -115,7 +113,6 @@ print('w = ' + str(w))
 print('b = ' + str(b))
 '''
 
-# GRADED FUNCTION: propagate
 def propagation(w, b, X, Y):
     """
     Implement the cost function and its gradient for the propagation explained above
@@ -161,7 +158,6 @@ print('db = ' + str(grads['db']))
 print('cost = ' + str(cost))
 '''
 
-# GRADED FUNCTION: optimize
 def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
     """
     This function optimizes w and b by running a gradient descent algorithm
@@ -232,7 +228,6 @@ print('dw = ' + str(grads['dw']))
 print('db = ' + str(grads['db']))        
 '''
         
-# GRADED FUNCTION: predict
 def predict(w, b, X):
     '''
     Predict whether the label is 0 or 1 using learned logistic regression parameters (w, b)
@@ -266,7 +261,7 @@ def predict(w, b, X):
 print('prediction = ' + str(predict(w, b, X)))
 '''
 
-# GRADED FUNCTION: model
+
 def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate = 0.5, print_cost = False):
     """
     Builds the logistic regression model by calling the function you've implemented previously
